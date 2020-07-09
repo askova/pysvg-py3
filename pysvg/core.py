@@ -90,7 +90,7 @@ class BaseElement:
         if len(self._subElements) == 0:  # self._textContent==None and
             xml += '/>\n'
         else:
-            xml += ' >\n'
+            xml += ' >'
             # if self._textContent==None:
             for subelement in self._subElements:
                 s = subelement.getXML()
